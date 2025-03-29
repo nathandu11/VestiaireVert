@@ -1,0 +1,42 @@
+SAE : Création de site web
+Objectifs pédagogiques
+Comprendre les étapes de création d’un site web commercial.
+Intégrer des compétences en marketing digital pour concevoir un site optimisé.
+Développer une stratégie de contenu adaptée à une cible précise.
+Utiliser des outils de création de sites web simples (WordPress, Wix, ou HTML/CSS de base).
+Analyser et évaluer les performances d’un site web (trafic, SEO).
+Travail à réaliser dans la SAE
+Choisir une thématique commerciale :
+
+Exemple : créer un site pour une boutique fictive, une agence de voyage, ou un service en ligne.
+Choisir en rapport avec votre spécialisation commerciale. 
+Définir les objectifs du site : Création d'une boutique de vente de vetement de seconde main
+Qui est la cible ? B2C
+Quels sont les objectifs ? proposer des vetements de qualités de seconde main qui respecte l'environnemt
+Quels sont les KPI à suivre ? trafic , taux de clic
+
+Réaliser un cahier des charges simplifié :
+Structure du site :  3 pages , fonctionnalités nécessaires (formulaires de contact, panier, etc.).
+Design : maquette de l’interface utilisateur (via Figma, Canva ou simplement sur papier).
+Stratégie de contenu : quels types de textes, images, ou vidéos seront nécessaires ?
+
+Créer le site web :
+ coder un site simple en HTML/CSS si les compétences le permettent.
+Développer les pages principales : page d’accueil, page produits/services, page contact, etc.
+Intégrer les éléments graphiques et multimédias (logos, photos, etc.).
+Optimiser le site :
+Ajouter des balises SEO (meta description, titres).
+Créer des contenus avec des mots-clés pertinents.
+Tester la responsivité (adaptation aux smartphones/tablettes).
+Tester et évaluer :
+Effectuer une vérification du site (liens, navigation, contenu).
+Simuler une analyse de performance avec des outils comme Google Analytics ou des simulateurs de SEO ou Green IT.
+Livrables attendus
+Un site web fonctionnel : comprenant au moins une page d’accueil, une page produits/services, une page contact.
+Un rapport de projet : décrivant les étapes de création, les choix effectués, les résultats attendus, et les outils utilisés.
+Une présentation orale : démonstration du site, justification des choix stratégiques et techniques.
+Évaluation
+Aspects techniques : respect du cahier des charges, qualité du site, ergonomie, design.
+Aspects commerciaux : pertinence des contenus, alignement avec la cible, originalité.
+Travail collaboratif : implication de chaque membre, respect des délais.
+Analyse et réflexion : stratégie SEO, identification des forces et faiblesses.

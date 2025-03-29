@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Stardom';
+    src: url('../Fonts/WEB/fonts/Stardom-Regular.woff2') format('woff2'),
+         url('../Fonts/WEB/fonts/Stardom-Regular.woff') format('woff'),
+         url('../Fonts/WEB/fonts/Stardom-Regular.ttf') format('truetype'),
+         url('../Fonts/WEB/fonts/Stardom-Regular.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} 
