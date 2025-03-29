@@ -1,0 +1,31 @@
+# Commandes Git essentielles pour VestiaireVert
+
+## Commandes quotidiennes
+# Vérifier l'état des fichiers
+git status                  # Voir les fichiers modifiés/ajoutés/supprimés
+
+# Ajouter des modifications
+git add .                  # Ajouter tous les fichiers modifiés
+
+# Créer un commit
+git commit -m "message"    # Créer un commit avec un message
+
+# Pousser les modifications
+git push     # Envoyer les commits vers GitHub
+
+## Récupérer les modifications
+git pull      # Récupérer et fusionner les modifications depuis GitHub
+
+
+## GitHub Pages
+# Une fois le code poussé sur GitHub :
+1. Aller sur GitHub.com > votre dépôt
+2. Settings > Pages
+3. Source : Branch: main, /(root)
+4. Save
+# Le site sera disponible à : https://nathandu11.github.io/VestiaireVert/
+
+## En cas d'erreur de permission GitHub
+1. Vérifier que vous êtes connecté avec le bon compte
+2. Ou demander à être ajouté comme collaborateur
+3. Accepter l'invitation reçue par email 
