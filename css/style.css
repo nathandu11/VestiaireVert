@@ -24,16 +24,15 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--gray-bg);
+    display: flex; 
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header et Navigation */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     background-color: var(--primary-color);
-    z-index: 1000;
+    z-index: 10;
     padding: 1rem 2rem;
 }
 
@@ -149,50 +148,32 @@ nav ul li a.active {
     }
 }
 
-/* Ajustement pour le contenu principal */
-main {
-    padding-top: var(--header-height);
-}
-
 /* Hero Section */
 .hero-section {
-    margin-top: var(--header-height);
-    height: calc(100vh - var(--header-height));
     position: relative;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.hero-slider {
-    height: 100%;
-    position: relative;
-}
-
-.hero-slide {
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
-
 .hero-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
 }
 
 .hero-content {
     position: absolute;
-    bottom: 2rem;
-    left: 2rem;
-    color: var(--light-text);
-    max-width: 600px;
+
+    right: 5%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    max-width: 500px;
+
+    padding: 3rem;
+    border-radius: 4px;
 }
 
 .hero-content h1 {
-    font-family: var(--font-heading);
+    font-family: var(--primary-color);
     font-size: 4rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -222,13 +203,30 @@ main {
 .cta-button:hover {
     background-color: var(--light-text);
     color: var(--primary-color);
+    outline: 2px solid var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 90%;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        height: 80vh;
+    }
 }
 
 /* Featured Categories */
 .featured-categories {
     padding: 4rem 1rem;
-    max-width: var(--max-width);
-    margin: 0 auto;
     background-color: var(--background-color);
 }
 
