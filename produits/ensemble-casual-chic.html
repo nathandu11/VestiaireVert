@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensemble Casual Chic - VestiaireVert</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .product-detail {
+            max-width: 1200px;
+            margin: 120px auto 40px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .product-images {
+            position: relative;
+        }
+
+        .product-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .product-details {
+            margin-bottom: 30px;
+        }
+
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .detail-label {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        .add-to-cart {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .add-to-cart:hover {
+            background-color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .product-detail {
+                grid-template-columns: 1fr;
+                margin-top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">
+                <img src="../img/Logo_Tc_travel_bien_svg-removebg-preview.png" alt="VestiaireVert">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../produits.html" class="active">Nos Produits</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-button">☰</button>
+                <a href="#" class="cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                        <path d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <circle cx="10.5" cy="20.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
+                        <circle cx="17.5" cy="20.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-detail">
+            <div class="product-images">
+                <img src="../img/IMG_8658.JPG" alt="Ensemble casual chic">
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Sweat Chevignon</h1>
+                <p class="product-price">36,00 €</p>
+                <div class="product-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Taille</span>
+                        <span>M</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">État</span>
+                        <span>Excellent état</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Marque</span>
+                        <span>Chevignon</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Matière</span>
+                        <span>Coton</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Couleur</span>
+                        <span>Gris</span>
+                    </div>
+                </div>
+                <p style="margin-bottom: 20px;">
+                    Sweat Chevignon authentique en excellent état. Coupe classique et confortable, parfait pour un style décontracté. La qualité Chevignon garantit durabilité et style intemporel.
+                </p>
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-branding">
+                <a href="#" class="footer-logo">
+                    <img src="../img/Logo_Tc_travel_bien_svg-removebg-preview.png" alt="VestiaireVert">
+                </a>
+                <div class="social-links">
+                    <a href="#" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect width="24" height="24" fill="none"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect width="24" height="24" fill="none"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect width="24" height="24" fill="none"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <nav class="footer-nav">
+                <div class="footer-nav-section">
+                    <h4>Shopping</h4>
+                    <ul>
+                        <li><a href="#">Femmes</a></li>
+                        <li><a href="#">Hommes</a></li>
+                        <li><a href="#">Nouveautés</a></li>
+                        <li><a href="#">Promotions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h4>Aide</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Retours</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h4>À propos</h4>
+                    <ul>
+                        <li><a href="#">Notre Histoire</a></li>
+                        <li><a href="#">Développement Durable</a></li>
+                        <li><a href="#">Nos Engagements</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html> 
