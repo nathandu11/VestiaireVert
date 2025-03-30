@@ -387,5 +387,87 @@
             </nav>
         </div>
     </footer>
+    <script>
+        // Sélectionner tous les éléments nécessaires
+        const filterSelects = {
+            category: document.getElementById('category'),
+            size: document.getElementById('size'),
+            price: document.getElementById('price'),
+            state: document.getElementById('state')
+        };
+
+        const productCards = document.querySelectorAll('.product-card');
+
+        // Fonction pour extraire le prix d'un produit
+        function extractPrice(priceText) {
+            return parseFloat(priceText.replace('€', '').trim());
+        }
+
+        // Fonction pour vérifier si un produit correspond aux filtres sélectionnés
+        function matchesFilters(product, filters) {
+            // Récupérer les informations du produit
+            const productTitle = product.querySelector('h3').textContent.toLowerCase();
+            const productSize = product.querySelector('.product-size').textContent.replace('Taille:', '').trim();
+            const productPrice = extractPrice(product.querySelector('.product-price').textContent);
+            const productState = product.querySelector('.product-state').textContent.toLowerCase();
+
+            // Vérifier chaque filtre
+            if (filters.category !== 'all') {
+                const categoryMatches = {
+                    'vestes': productTitle.includes('jacket') || productTitle.includes('veste'),
+                    'chemises': productTitle.includes('chemise'),
+                    'sweats': productTitle.includes('sweat'),
+                    'joggings': productTitle.includes('jogging')
+                };
+                if (!categoryMatches[filters.category]) return false;
+            }
+
+            if (filters.size !== 'all' && productSize.toLowerCase() !== filters.size.toLowerCase()) {
+                return false;
+            }
+
+            if (filters.price !== 'all') {
+                const [minPrice, maxPrice] = filters.price.split('-').map(Number);
+                if (productPrice < minPrice || productPrice > maxPrice) return false;
+            }
+
+            if (filters.state !== 'all') {
+                const stateMatches = {
+                    'excellent': productState.includes('excellent'),
+                    'very-good': productState.includes('très bon'),
+                    'good': productState.includes('bon')
+                };
+                if (!stateMatches[filters.state]) return false;
+            }
+
+            return true;
+        }
+
+        // Fonction pour mettre à jour l'affichage des produits
+        function updateProductDisplay() {
+            const selectedFilters = {
+                category: filterSelects.category.value,
+                size: filterSelects.size.value,
+                price: filterSelects.price.value,
+                state: filterSelects.state.value
+            };
+
+            productCards.forEach(product => {
+                if (matchesFilters(product, selectedFilters)) {
+                    product.style.display = '';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        // Ajouter les écouteurs d'événements pour chaque filtre
+        Object.values(filterSelects).forEach(select => {
+            select.addEventListener('change', updateProductDisplay);
+        });
+
+        // Initialiser l'affichage
+        updateProductDisplay();
+    </script>
 </body>
 </html> 
