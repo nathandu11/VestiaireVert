@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweat Dickies - VestiaireVert</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .product-detail {
+            max-width: 1200px;
+            margin: 120px auto 40px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .product-images {
+            position: relative;
+        }
+
+        .product-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .product-details {
+            margin-bottom: 30px;
+        }
+
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .detail-label {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        .add-to-cart {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .add-to-cart:hover {
+            background-color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .product-detail {
+                grid-template-columns: 1fr;
+                margin-top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">
+                <img src="../img/Logo_Tc_travel_bien_svg-removebg-preview.png" alt="VestiaireVert">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../produits.html" class="active">Nos Produits</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="#">À propos</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#" class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </a>
+                    <a href="#" class="cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-button">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-detail">
+            <div class="product-images">
+                <img src="../img/IMG_8604.JPG" alt="Sweat Dickies - Vue principale">
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Sweat Dickies</h1>
+                <p class="product-price">35,00 €</p>
+                <div class="product-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Taille</span>
+                        <span>L</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">État</span>
+                        <span>Très bon état</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Marque</span>
+                        <span>Dickies</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Matière</span>
+                        <span>Coton</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Couleur</span>
+                        <span>Noir</span>
+                    </div>
+                </div>
+                <p style="margin-bottom: 20px;">
+                    Sweat Dickies authentique, coupe confortable et décontractée. Parfait pour un style streetwear casual, ce sweat allie confort et style avec sa qualité de fabrication caractéristique de la marque.
+                </p>
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-branding">
+                <a href="../index.html" class="footer-logo">
+                    <img src="../img/Logo_Tc_travel_bien_svg-removebg-preview.png" alt="VestiaireVert">
+                </a>
+                <p class="footer-description">
+                    Votre destination pour la mode éco-responsable et vintage de qualité.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <nav class="footer-nav">
+                <div class="footer-nav-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="../produits.html">Nos Produits</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="#">À propos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h4>Catégories</h4>
+                    <ul>
+                        <li><a href="#">Vestes</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">Joggings</a></li>
+                        <li><a href="#">Accessoires</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h4>Service Client</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Retours</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 VestiaireVert. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html> 
